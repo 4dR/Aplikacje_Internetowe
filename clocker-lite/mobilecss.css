@@ -36,6 +36,12 @@
 
 }
 
+@media screen and (min-width: 769px) {
+    .right-nav {
+        display: flex !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     nav {
         border-bottom: 1px solid var(--pink);
@@ -68,6 +74,14 @@
         justify-content: center;
         padding: 20px;
         margin-left: 0px; 
+    }
+
+    .my-name-pc {
+        display: none;
+    }
+
+    .my-name-mobile {
+        display: flex;
     }
 }
 

@@ -75,6 +75,10 @@ nav a:hover {
     display: none;
 }
 
+.my-name-mobile {
+    display: none;
+}
+
 /* END NAVIGATION */
 
 /* WELCOME */

@@ -36,7 +36,7 @@
                     <a href="#about-us">Describe</a>
                 </div>
                 <?php if (isset($_SESSION['zalogowany']) && $_SESSION['zalogowany']) { ?> 
-                    <div class="my-name">
+                    <div class="my-name my-name-pc">
                         <?php echo "Witaj " . $_SESSION['login']; ?>
                     </div>
                     <div class="sign-in">
@@ -51,6 +51,12 @@
                     </div>
                 <?php } ?>
             </div>
+            <?php if (isset($_SESSION['zalogowany']) && $_SESSION['zalogowany']) { ?> 
+                    <div class="my-name my-name-mobile">
+                        <?php echo "Witaj " . $_SESSION['login']; ?>
+                    </div>
+                    
+                <?php } ?>
             <div class="burger">
                 <i class="fas fa-bars"></i>
             </div>

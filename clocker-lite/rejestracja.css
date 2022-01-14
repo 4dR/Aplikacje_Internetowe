@@ -36,13 +36,14 @@ body {
     flex-direction: column;
 }
 
-.login-form input{
+.login-form input {
     border-radius: 15px;
     margin: 7px;
     background-color: rgb(240, 240, 240);
     border: 1px solid rgb(197, 197, 197) ;
     font-size: 14px;
     padding: 5px 15px;
+    max-width: 220px;
 }
 
 .logo h1{
@@ -89,4 +90,14 @@ body {
 }
 .correct{
     border-color: green !important;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: var(--black);
+    transition: 0.2s all linear;
+}
+
+.login-form a:hover {
+    color: var(--orange);
 }

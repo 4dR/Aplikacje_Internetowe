@@ -15,14 +15,15 @@
     <div class="container-fluid section">
         <div class="row main-row">
             <div class="col-5 main-left">
-               <form class="login-form" id="login-form" action="">
+               <form class="login-form" id="login-form" action="/check_register.php" method="GET">
                    <div class="logo">
                        <h1>Sign-up</h1>
                    </div>
-                   <input type="text" placeholder="Set e-mail" id="check-email">
-                   <input type="password" placeholder="Set password" id="check-password">
+                   <input type="text" placeholder="Set e-mail" id="check-email" name="login">
+                   <input type="password" placeholder="Set password" id="check-password" name="pass">
                    <input type="password" placeholder="Set password again" id="check-password-again">
                    <input type="button" value="Register" class="submit-button" id="submit-button">
+                   <a href="/logowanie.php">Already a member? Click here to sign-in</a>
                </form>
             </div>
             <div class="col-7 main-right">

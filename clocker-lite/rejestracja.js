@@ -32,4 +32,6 @@ $('.submit-button').on('click', function(event){
     checkPassword2.removeClass('wrong');
     checkPassword2.addClass('correct');
 
+    $('#login-form').submit();
+
 })
