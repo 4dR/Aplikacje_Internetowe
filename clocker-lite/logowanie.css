@@ -1,0 +1,92 @@
+:root{
+	--font: "Montserrat_Font", sans-serif;
+	--icons: "Font Awesome 5 Pro";
+	--red: #ff0000;
+	--black: #262827;
+	--orange: rgb(254, 96, 110);
+	--pink: rgb(255, 195, 115);
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-left {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section {
+    height: 100%;
+}
+
+.main-row {
+    height: 100%;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-form input{
+    border-radius: 15px;
+    margin: 7px;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(197, 197, 197) ;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+.logo h1{
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.submit-button {
+    font-size: 14px;
+    padding: 5px 15px;
+    background: linear-gradient(25deg, var(--orange) 0%, var(--pink) 85%);
+    width: 90%;
+    margin-top: 30px;
+    border: 0px !important;
+}
+
+.submit-button:hover{
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+.login-form input:focus{
+    outline: none;
+}
+
+.main-right {
+    background: linear-gradient(25deg, var(--orange) 0%, var(--pink) 85%); 
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+  
+}
+
+.main-right h2 {
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+
+.wrong{
+    border-color: var(--orange) !important;
+}
+.correct{
+    border-color: green !important;
+}
