@@ -67,7 +67,14 @@
             <?php
                 $sql = "SELECT * FROM user";
                 $result = $conn->query($sql);
+                $time = 0;
+
+                while($row = $result->fetch_assoc()) {
+                    $time = $time + $row['time'];     
+                }
             ?>
+
+                
             <div class="row">
                 <div class="col-12 col-md-6 col-xl-3 stats-column">
                     <i class="fas fa-user"></i>
@@ -77,8 +84,8 @@
     
                 <div class="col-12 col-md-6 col-xl-3 stats-column">
                     <i class="fas fa-calendar"></i>
-                    <p>Weekly stats</p>
-                    <p>0</p>
+                    <p>Total hours</p>
+                    <p><?php echo round(($time / 3600)); ?></p>
                 </div>
     
                 <div class="col-12 col-md-6 col-xl-3 stats-column">

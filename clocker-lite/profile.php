@@ -88,13 +88,15 @@ if(isset($_SESSION['login'])) {
                             ?> <form action="/delete_group.php" method="GET">
                                 <div class="single-profile-project">
                                     <input type="hidden" value="<?php echo $row['id']; ?>" name="groupid">
-                                    <p><?php echo $row['name']; ?></p>
-                                    <div class="right-buttons">
-                                        <div class="edit-button" onclick="modifyGroup(<?php echo $row['id']; ?>);">
-                                            Modify
-                                        </div>
-                                        <input type="submit" value="Delete">
-                                    </div>
+                                    <p><?php echo $row['name']; ?></p>                             
+                                        <?php if ($_SESSION['rank'] === '2') { ?>
+                                            <div class="right-buttons">
+                                                <div class="edit-button" onclick="modifyGroup(<?php echo $row['id']; ?>);">
+                                                    Modify
+                                                </div>
+                                                <input type="submit" value="Delete">
+                                            </div>
+                                      <?php } ?>
                                 </div>
                                 
                         </form> <?php
@@ -119,7 +121,9 @@ if(isset($_SESSION['login'])) {
                                 <div class="single-profile-project">
                                     <input type="hidden" value="<?php echo $row['id']; ?>" name="projectid">
                                     <p><?php echo $row['name']; ?></p>
-                                    <input type="submit" value="Delete">
+                                    <?php if ($_SESSION['rank'] === '2') {
+                                        ?> <input type="submit" value="Delete"> <?php
+                                    } ?>
                                 </div>
                                 
                         </form> <?php

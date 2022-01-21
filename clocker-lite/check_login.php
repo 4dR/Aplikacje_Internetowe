@@ -18,6 +18,7 @@
                 $_SESSION['zalogowany'] = true;
                 $_SESSION['login'] = $row['login'];
                 $_SESSION['id'] = $row['id'];
+                $_SESSION['rank'] = $row['UsersRole_id'];
                 header('Location: /profile.php');        
             } else {
                 header('Location: /logowanie.php'); 

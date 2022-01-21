@@ -1,7 +1,7 @@
 <nav>
             <div class="left-nav">
                 <!-- logo -->
-                <h1>Clocker!</h1>
+                <a href="index.php"><h1>Clocker!</h1></a>
             </div>
             <div class="right-nav">
                 <!-- nav opis, log, rej,  -->
