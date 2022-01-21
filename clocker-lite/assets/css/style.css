@@ -1,0 +1,436 @@
+:root{
+    --font: "Montserrat_Font", sans-serif;
+    --icons: "Font Awesome 5 Pro";
+    --red: #ff0000;
+    --black: #262827;
+    --orange: rgb(254, 96, 110);
+    --pink: rgb(255, 195, 115);
+   
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+/* NAVIGATION */
+a, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--orange);
+}
+
+nav a {
+    font-size: 1.25em;
+    color: var(--pink);
+}
+
+nav {
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.left-nav {
+
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.describe {
+    margin: 0px 20px;
+}
+
+nav a:hover {
+    color: var(--orange);
+    transition: .2s all linear;
+}
+
+.sign-in {
+    margin: 0px 20px;
+}
+
+.sign-up {
+    margin: 0px 20px;
+}
+
+.burger {
+    margin-right: 5px;
+    font-size: 1.25em;
+    background: linear-gradient(25deg, var(--orange) 0%, var(--pink) 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: none;
+}
+
+.my-name-mobile {
+    display: none;
+}
+
+/* END NAVIGATION */
+
+/* WELCOME */
+
+.welcome {
+    height: 50vh;
+    background: linear-gradient(25deg, var(--orange) 0%, var(--pink) 85%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome h2 {
+    
+    font-weight: 700;
+    font-size: 4em;
+}
+
+/* END WELCOME */
+
+/* DESCRIBE */
+
+.about-us {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.title-zone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-zone h4 {
+    font-size: 2.25em;
+}
+
+.title-straight {
+    height: 5px;
+    width: 100px;
+    border-radius: 5px;
+    background: linear-gradient(25deg, var(--orange) 0%, var(--pink) 85%);
+}
+
+.desc-zone {
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+
+/* END DESCRIBE */
+
+/* STATS */
+.title-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-stats h4 {
+    font-size: 2.25em;
+}
+
+.stats-zone {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.stats-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stats-column i {
+    font-size: 5em;
+    margin-bottom: 15px;
+    background: linear-gradient(25deg, var(--orange) 0%, var(--pink) 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stats-column p {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.stats-straight {
+    height: 5px;
+    width: 100px;
+    border-radius: 5px;
+    background: linear-gradient(25deg, var(--orange) 0%, var(--pink) 85%);
+}
+
+/* END STATS */
+
+/* FOOTER */
+footer {
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer p {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+
+/* END FOOTER */
+
+
+/* PROFIL UZYTRKOWNIKA */
+
+.welcome-profile {
+    height: 25vh;
+}
+
+.welcome-profile h2 {
+    font-size: 40px;
+}
+
+.profile-container {
+    margin-top: 60px;
+}
+
+.profile-column:not(.profile-column:last-child) {
+    border-right: 1px solid rgb(231, 231, 231);
+}
+
+.profile-column input {
+    background-color: rgb(35, 160, 35);
+    color: white;
+    border: 0px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.end-job-btn {
+    background-color: rgb(202, 28, 28) !important;
+}
+
+.single-profile-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-left: 10px;
+    background-color: rgb(250, 250, 250);
+}
+
+.single-profile-project p {
+    margin-bottom: 0px;
+
+}
+
+.single-profile-project input {
+    background-color: rgb(197, 14, 14);
+}
+
+.right-buttons {
+    display: flex;
+    height: 100%;
+}
+
+.edit-button {
+    background-color: rgb(56, 130, 228);
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.modify-group {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: none;
+}
+
+.modify-group-zone {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.exit-zone {
+    color: var(--orange);
+    position: absolute;
+    font-size: 30px;
+    top: -45px;
+    right: -45px;
+    cursor: pointer;
+    transition: .2s all linear;
+}
+
+.exit-zone:hover {
+    transform: rotate(90deg);
+}
+
+.modify-h4 {
+    margin-top: 50px;
+}
+
+.modify-group-zone form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* EOF PROFIL UZYTRKOWNIKA */
+
+/* NEW PROJECT*/
+
+.add-project {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.add-project form input , .add-project form select, .profile-newproject {
+    width: 200px;
+    height: 45px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(141, 141, 141);
+}
+
+.new-project-button, .profile-newproject, .add-customer .customer-add-button {
+    background-color: rgb(35, 160, 35);
+    color: white;
+}
+
+.profile-newproject {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-newproject i {
+    margin-right: 7px;
+}
+
+.add-customer {
+    display: flex;
+    justify-content: center;
+}
+
+.add-customer form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.add-customer form input, .add-customer form textarea, .modify-group-zone input, .modify-group-zone textarea {
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid rgb(141, 141, 141);
+    resize: none;
+}
+
+.add-customer form input:focus, .add-customer form textarea:focus {
+    outline: none;
+    border-color: var(--orange);
+}
+
+.add-customer form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.add-customer form h4:last-child {
+    margin-top: 50px;
+}
+
+.add-customer-inner {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.add-new-group-zone {
+    margin-top: 50px;
+}
+
+.add-new-group-zone a input {
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* END NEW PROJECT*/
+
+/*ADDGROUP*/
+.addgroup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.addgroup-container form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.addgroup-container form input, .addgroup-container form textarea {
+    margin-top: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(141, 141, 141);
+    resize: none;
+}
+
+.addgroup-container form input:focus, .addgroup-container form textarea:focus {
+    outline: none;
+    border-color: var(--orange);
+}
+
+.addgroup-container form textarea {
+    height: 150px;
+}
+
+.addgroup-button {
+    background-color: rgb(35, 160, 35);
+    color: white;
+    padding: 10px;
+}
+
+/*END ADDGROUP*/
+

@@ -3,7 +3,7 @@ function OpenCon() {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $db = "clocker_lite";
+    $db = "mydb";
     
     // Create connection
     $conn = new mysqli($servername, $username, $password,$db) or die("Connect failed: %s\n". $conn -> error);

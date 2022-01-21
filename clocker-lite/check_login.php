@@ -17,7 +17,8 @@
             if($pass === $row['password']) {
                 $_SESSION['zalogowany'] = true;
                 $_SESSION['login'] = $row['login'];
-                header('Location: /');        
+                $_SESSION['id'] = $row['id'];
+                header('Location: /profile.php');        
             } else {
                 header('Location: /logowanie.php'); 
             }                                                                                                                                                                                       

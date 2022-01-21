@@ -8,11 +8,13 @@
     $login = $_GET['login'];
     $pass = $_GET['pass'];
 
+    $date = date('Y-m-d H:i:s');
     $sql2 = "SELECT * FROM user WHERE login = '$login'";
     $result2 = $conn->query($sql2);
 
+
     if ($result2->num_rows === 0) {
-        $sql = "INSERT INTO `user` (`id`, `login`, `password`, `time`) VALUES(NULL, '$login', '$pass', 0)";
+        $sql = "INSERT INTO `user` (`id`, `login`, `password`, `time`, `registerDate`, UsersRole_id) VALUES(NULL, '$login', '$pass', 0, '$date', 0)";
         $result = $conn->query($sql);
 
         if ($result === TRUE) {
@@ -21,8 +23,10 @@
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
             header("Location: /rejestracja.php");
+            
         }
     } else {
+        
         echo "User already exist!";
     }
 
